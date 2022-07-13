@@ -1,25 +1,35 @@
-# Big-O - Definição, Exemplos e Benchmark
+# Big-O - Definition, Examples and Benchmark
+In a nutshell, Big-O is a rating for the complexity of the algorithm based on the cost or processing time.
 
-## **Big-O - Notações**
+## **Big-O - Notations**
+Big-O notations are mathematical notations that can be used to describe the complexity of the algorithm.
 
-### O(1) (constante)
-    Não há crescimento do número de operações, pois não depende do volume de dados de entrada (n).
-### O(log n) (logaritmo) 
-    O crescimento do número de operações é menor do que o do número de itens.
+### O(1) (constant)
+There is no growth in the number of operations as it does not depend on the volume of input data (n).
+
+### O(log n) (logarithmic) 
+The growth in the number of operations is less than the growth in the number of items.
+
 ### O(n) (linear)
-    O crescimento no número de operações é diretamente proporcional ao crescimento do número de itens.
-### O(n log n) (linearitmica ou quasilinear)
-    É o resultado das operações **(log n)** executada **n** vezes.
-### O(n^2) (quadrático)
-    Ocorre quando os itens de dados são processados aos pares, muitas vezes com repetições dentro da outra.
-### O(2^n) (exponencial)
-    A medida que n aumenta, o fator analisado (tempo ou espaço) aumenta exponencialmente.
-### O(n!) (fatorial)
-    O número de instruções executadas cresce muito rapidamente para um pequeno número de dados.
+The growth in the number of operations is directly proportional to the growth in the number of items.
 
-## **Big-O - Notação Alternativa**
+### O(n log n) (Linearithmic or quasilinear)
+It is the result of operations **(log n)** performed **n** times.
 
-| Big-O         | Alternativa   |
+### O(n^2) (quadratic)
+Occurs when data items are processed in pairs, often with repetitions within each other.
+
+### O(2^n) (exponential)
+As n increases, the analyzed factor (time or space) increases exponentially.
+
+### O(n!) (factorial)
+The number of executed instructions grows very quickly for a small amount of data.
+
+![Screenshot](assets/big-o-complexity-chart.png)
+
+## **Big-O - Alternative Notation**
+
+| Big-O         | Alternative   |
 | ------------- | ------------- |
 | **O(1)**  		| **O(yeah)**		|
 | **O(log n)** 	| **O(nice)**		|
@@ -28,5 +38,3 @@
 | **O(n^2)** 		| **O(my)** 	 	|
 | **O(2^n)**  	| **O(no)**	 		|
 | **O(n!)**			| **O(mg!)**  	|
-
-### Aceito colaborações para uma versão em inglês :)

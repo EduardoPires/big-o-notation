@@ -29,7 +29,7 @@ The number of executed instructions grows very quickly for a small amount of dat
 
 ## **Big-O - Alternative Notation**
 
-| Big-O         | Alternativa   |
+| Big-O         | Alternative   |
 | ------------- | ------------- |
 | **O(1)**  		| **O(yeah)**		|
 | **O(log n)** 	| **O(nice)**		|

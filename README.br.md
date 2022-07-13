@@ -1,5 +1,5 @@
 # Big-O - Definição, Exemplos e Benchmark
-Em poucas palavras, Big-O é uma classificação para a complexidade do algoritmo.
+Em poucas palavras, Big-O é uma classificação para a complexidade do algoritmo baseada no custo ou tempo de processamento.
 
 ## **Big-O - Notações**
 As notações Big-O são notações matemáticas que podem ser usadas para descrever a complexidade do algoritmo.

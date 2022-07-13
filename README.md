@@ -43,4 +43,4 @@ The number of executed instructions grows very quickly for a small amount of dat
 
 
 ## **Running the application**
-To run the application and see the benchmark result in the console, open the project in Visual Studio and set the configuration to "Release", then go to the "Debug" menu and click on the "Start Without Debugging" option.
+To run the application and see the benchmark result in the console, open the project in Visual Studio and set the configuration to "Release", then click on the "Debug" menu and click on the "Start Without Debugging" option.

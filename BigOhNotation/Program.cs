@@ -14,12 +14,12 @@ namespace BigOhNotation
     [MarkdownExporter]
     public class BigOBenchmarks
     {
-        readonly List<int> NumerosOrdenados = new()
+        readonly List<int> OrderedNumbers = new ()
         {
             1, 2, 4, 6, 10, 14, 15, 19, 20, 34, 36, 38, 40, 42, 50, 52, 55, 60, 61, 62, 63, 67, 70, 78, 80, 82, 84, 86, 88, 90, 92, 93, 99, 101, 105, 107, 110, 115,118
         };
 
-        readonly List<int> NumerosDesordenados = new ()
+        readonly List<int> UnorderedNumbers = new ()
         {
             2, 23, -575, 1, -400, 8, 44, -90, 0, 4, 180, -32, 323, 73, 59, 663, 35, 45, -67, 28, 3, 5, -5, 52, 7, 62, -20, 9, 92, 63, -342, 12, 53, 200, 234, 756, 456
         };
@@ -27,31 +27,31 @@ namespace BigOhNotation
         [Benchmark(Description = "O(1)")]
         public void BigO_1() 
         {
-            var ehpar = EhPar(3);
+            var isEven = IsEven(3);
         }
 
         [Benchmark(Description = "O(log n)")]
         public void BigO_LogN()
         {
-            BinarySearch(NumerosOrdenados, 52);
+            BinarySearch(OrderedNumbers, 52);
         }
 
         [Benchmark(Description = "O(n)")]
         public void BigO_N()
         {
-            LacoSimples(84);
+            SimpleLoop(84);
         }
 
         [Benchmark(Description = "O(n log n)")]
         public void BigO_NLogN()
         {
-            OrdenacaoMergeSort();
+            OrderingMergeSort();
         }
 
         [Benchmark(Description = "O(n^2)")]
         public void BigO_N2()
         {
-            LacoDuplo();
+            NestedLoop();
         }
 
         [Benchmark(Description = "O(2^n)")]
@@ -62,9 +62,9 @@ namespace BigOhNotation
 
 
         // O(1)
-        public bool EhPar(int numero)
+        public bool IsEven(int number)
         {
-            return numero % 2 == 0;
+            return number % 2 == 0;
         }
 
         // O(log n)
@@ -101,12 +101,12 @@ namespace BigOhNotation
             return -1;
         }
 
-        public bool LacoSimples(int numeroPesquisa)
+        public bool SimpleLoop(int searchedNumber)
         {
             // O(n)
-            foreach (var element in NumerosOrdenados)
+            foreach (var element in OrderedNumbers)
             {
-                if (element == numeroPesquisa)
+                if (element == searchedNumber)
                     return true;
             }
 
@@ -159,25 +159,25 @@ namespace BigOhNotation
         }
 
         // O(n log n)"
-        public void OrdenacaoMergeSort()
+        public void OrderingMergeSort()
         {
-            var numerosMergeSort = MergeSort(NumerosDesordenados.ToArray<int>(),
-                0, NumerosDesordenados.Count - 1).ToList<int>();
+            var numbersMergeSort = MergeSort(UnorderedNumbers.ToArray<int>(),
+                0, UnorderedNumbers.Count - 1).ToList<int>();
 
             var sbMergeSort = new StringBuilder();
-            for (int count = 0; count < numerosMergeSort.Count; count++)
+            for (int count = 0; count < numbersMergeSort.Count; count++)
             {
-                sbMergeSort.Append(numerosMergeSort[count].ToString() + "==>");
+                sbMergeSort.Append(numbersMergeSort[count].ToString() + "==>");
             }
 
             Console.WriteLine(sbMergeSort.ToString());
         }
 
-        public static void LacoDuplo()
+        public static void NestedLoop()
         {
             var n2Array = new int[20000];   
                         
-            int contador = 0;
+            int counter = 0;
 
             // O(n * n) = O(n²)
 
@@ -185,11 +185,11 @@ namespace BigOhNotation
             {
                 for (int j = 0; j < n2Array.Length; j++)     // O(n)
                 {
-                    contador++;
+                    counter++;
                 }
             }
 
-            Console.WriteLine("O(n^2) finalizado em " + contador.ToString() + " ciclos.");
+            Console.WriteLine("O(n^2) finished in " + counter.ToString() + " cycles.");
         }
 
         public static void TowerOfHanoi(int n, char from_rod, char to_rod, char aux_rod)

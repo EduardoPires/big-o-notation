@@ -1,7 +1,7 @@
 # Big-O - Definition, Examples and Benchmark
 In a nutshell, Big-O is a rating for the complexity of the algorithm based on the cost or processing time.
 
-### [Versão em ptBR](README.br.md)
+#### [Versão em ptBR](README.br.md)
 
 ## **Big-O - Notations**
 Big-O notations are mathematical notations that can be used to describe the complexity of the algorithm.

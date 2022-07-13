@@ -38,3 +38,7 @@ O número de instruções executadas cresce muito rapidamente para um pequeno n�
 | **O(n^2)** 		| **O(my)** 	 	|
 | **O(2^n)**  	| **O(no)**	 		|
 | **O(n!)**			| **O(mg!)**  	|
+
+
+## **Executando a aplicação**
+Para rodar a aplicação e ver o resultado do benchmark no console, abra o projeto com o Visual Studio e configure para rodar em modo "Release", e então clique no menu "Debug" e clique na opção "Start Without Debugging".

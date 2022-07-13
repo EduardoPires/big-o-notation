@@ -40,3 +40,7 @@ The number of executed instructions grows very quickly for a small amount of dat
 | **O(n^2)** 		| **O(my)** 	 	|
 | **O(2^n)**  	| **O(no)**	 		|
 | **O(n!)**			| **O(mg!)**  	|
+
+
+## **Running the application**
+To run the application and see the benchmark result in the console, open the project in Visual Studio and set the configuration to "Release", then go to the "Debug" menu and click on the "Start Without debugging" option.

@@ -17,6 +17,8 @@ Big-O Notation with samples and benchmark tests
 
 **O(n!) (fatorial)** - O número de instruções executadas cresce muito rapidamente para um pequeno número de dados.
 
+![Screenshot](assets/big-o-complexity-chart.png)
+
 ## **Big-O - Notação Alternativa**
 
 | Big-O         | Alternativa   |
